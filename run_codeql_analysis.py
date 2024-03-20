@@ -4,11 +4,11 @@ import json
 import shutil
 import xml.etree.ElementTree as ET
 
-codeql = "/home/pamusuo/research/codeql/codeql/codeql"
-base_dir = "/home/pamusuo/research/permissions-manager"
+codeql = "/home/robin489/RepoAnalysis/codeql/codeql/codeql"
+base_dir = "/scratch/pamusuo/repos/dacapo_analysis"
 repo_base_dir = os.path.join(base_dir, "repos4analysis")
-results_base_dir = os.path.join(base_dir, "repo_analysis/sarif_results")
-delete_repos = False
+results_base_dir = os.path.join(base_dir, "sarif_results")
+delete_repos = True
 
 def clone_repo(url, repo_dir):
     subprocess.run(["git", "clone", url, repo_dir], check=True)
@@ -19,6 +19,8 @@ def build_codeql_database(repo_dir, codeql_db_name):
         subprocess.run([codeql, "database", "create", codeql_db_name, "--language=java", "--overwrite"], check=True)
     except subprocess.CalledProcessError as e:
         print(f"Error building CodeQL database: {e}")
+        if delete_repos is True:
+            delete_repo(repo_dir)
         return False
     return True
 
@@ -74,7 +76,8 @@ def parse_sarif_file(sarif_path):
         return None
 
 def delete_repo(repo_dir):
-    shutil.rmtree(repo_dir)
+    os.chdir(base_dir)
+    subprocess.run(["sudo", "rm", "-rf", repo_dir], check = True)
 
 def get_package_name_from_pom(xml_file_path):
     try:
@@ -96,7 +99,8 @@ def get_package_name_from_pom(xml_file_path):
         groupId_element = root.find(f"{namesp}groupId")
         if groupId_element is None:
             parent = root.find(f"{namesp}parent")
-            groupId_element = parent.find(f"{namesp}groupId")
+            if parent is not None:
+                groupId_element = parent.find(f"{namesp}groupId")
         if groupId_element is None:
             groupId_element = root.find(f".//{namesp}groupId")
         if groupId_element is None:
@@ -140,7 +144,7 @@ def process_url(url_components, query_path, output_file):
     codeql_db_name = os.path.join(repo_dir, "codeql_db")
     codeql_output = os.path.join(results_base_dir, f"{repo_name}-results.sarif")
 
-    print(f"Processing {repo_name}")
+    print(f"Processing {package_name}")
 
     if not os.path.exists(repo_dir):
         try:
@@ -154,35 +158,37 @@ def process_url(url_components, query_path, output_file):
 
     if package_dir is None:
         with open(output_file, "a") as f:
-            f.write(f"{repo_name}, Pom.xml not found. Continuing...\n")
+            f.write(f"{package_name}, Pom.xml not found. Continuing...\n")
             package_dir = repo_dir
+
+    
 
     if not build_codeql_database(package_dir, codeql_db_name):
         with open(output_file, "a") as f:
-            f.write(f"{repo_name}, CodeQL build failed\n")
+            f.write(f"{package_name}, CodeQL build failed\n")
         return
 
     if not run_codeql_query(codeql_db_name, query_path, codeql_output):
         with open(output_file, "a") as f:
-            f.write(f"{repo_name}, CodeQL query failed\n")
+            f.write(f"{package_name}, CodeQL query failed\n")
         return
 
     sarif_output = parse_sarif_file(codeql_output)
 
     with open(output_file, "a") as f:
-        f.write(f"{repo_name}, {sarif_output}\n")
+        f.write(f"{package_name}, {sarif_output}\n")
 
     if delete_repos:
         delete_repo(repo_dir)
 
 if __name__ == "__main__":
-    url_file = "github_urls.txt"
-    query_paths = ["/home/pamusuo/research/codeql/vscode-codeql-starter/codeql-custom-queries-java/file-write.ql",
-                    "/home/pamusuo/research/codeql/vscode-codeql-starter/codeql-custom-queries-java/file-read.ql",
-                    "/home/pamusuo/research/codeql/vscode-codeql-starter/codeql-custom-queries-java/runtime-exec.ql",
-                    "/home/pamusuo/research/codeql/vscode-codeql-starter/codeql-custom-queries-java/socket-connect.ql",
-                    "/home/pamusuo/research/codeql/vscode-codeql-starter/codeql-custom-queries-java/socket-server.ql"]
-    output_file = "/home/pamusuo/research/permissions-manager/repo_analysis/analysis_results.txt"
+    url_file = "/home/pamusuo/research/permissions-manager/repo_analysis/dacapo_dependencies_url.txt"
+    query_paths = ["/home/robin489/RepoAnalysis/codeql/vscode-codeql-starter/codeql-custom-queries-java/file-write.ql",
+                    "/home/robin489/RepoAnalysis/codeql/vscode-codeql-starter/codeql-custom-queries-java/file-read.ql",
+                    "/home/robin489/RepoAnalysis/codeql/vscode-codeql-starter/codeql-custom-queries-java/runtime-exec.ql",
+                    "/home/robin489/RepoAnalysis/codeql/vscode-codeql-starter/codeql-custom-queries-java/socket-connect.ql",
+                    "/home/robin489/RepoAnalysis/codeql/vscode-codeql-starter/codeql-custom-queries-java/socket-server.ql"]
+    output_file = "/home/pamusuo/research/permissions-manager/repo_analysis/dacapo_dependencies_results.txt"
 
     with open(url_file, "r") as f:
         urls = f.readlines()
