@@ -1,0 +1,157 @@
+Analyzing package capabilities
+
+com.github.avrora-framework:avrora, {'file-read': 22, 'file-write': 10, 'socket-connect': 0, 'socket-server': 3, 'runtime-exec': 1}
+junit-team, Cloning failed
+org.hamcrest:hamcrest-core, Pom.xml not found. Continuing...
+org.hamcrest:hamcrest-core, CodeQL build failed
+
+org.apache.xmlgraphics:batik-shared-resources, CodeQL build failed
+org.apache.xmlgraphics:batik-svgrasterizer, {'file-read': 1, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-parser, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-awt-util, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:xmlgraphics-commons, {'file-read': 2, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+commons-io:commons-io, {'file-read': 1, 'file-write': 3, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 1}
+commons-logging:commons-logging, {'file-read': 0, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-xml, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+xml-apis:xml-apis-ext, Pom.xml not found. Continuing...
+xml-apis:xml-apis-ext, CodeQL build failed
+org.apache.xmlgraphics:batik-transcoder, {'file-read': 2, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-anim, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-css, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-ext, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-svg-dom, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-bridge, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-script, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-dom, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+xml-apis-1.0.b2.pom, Cloning failed
+org.apache.xmlgraphics:batik-gvt, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-svggen, {'file-read': 1, 'file-write': 5, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-util, {'file-read': 6, 'file-write6': 3, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-constants, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-i18n, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-codec, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+
+
+org.biojava:biojava-core, CodeQL build failed
+org.biojava:biojava-structure, CodeQL build failed
+org.rcsb:ciftools-java, CodeQL build failed
+javax.annotation:javax.annotation-api, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+com.google.code.gson:gson, CodeQL build failed
+org.rcsb:mmtf-api, Pom.xml not found. Continuing...
+org.rcsb:mmtf-api, CodeQL build failed
+org.rcsb:mmtf-serialization, Pom.xml not found. Continuing...
+org.rcsb:mmtf-serialization, CodeQL build failed
+org.msgpack:jackson-dataformat-msgpack, Pom.xml not found. Continuing...
+org.msgpack:jackson-dataformat-msgpack, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.msgpack:msgpack-core, Pom.xml not found. Continuing...
+org.msgpack:msgpack-core, CodeQL build failed
+org.rcsb:mmtf-codec, Pom.xml not found. Continuing...
+org.rcsb:mmtf-codec, CodeQL build failed
+commons-lang:commons-lang, Pom.xml not found. Continuing...
+commons-lang:commons-lang, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.biojava:biojava-alignment, CodeQL build failed
+12, Cloning failed
+commons-codec:commons-codec, {'file-read': 2, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+openchart:openchart, Pom.xml not found. Continuing...
+openchart:openchart, CodeQL build failed
+Vector3d.java, Cloning failed
+org.jgrapht:jgrapht-core, CodeQL build failed
+org.jheaps:jheaps, Pom.xml not found. Continuing...
+org.jheaps:jheaps, CodeQL build failed
+com.fasterxml.jackson.core:jackson-databind, CodeQL build failed
+com.fasterxml.jackson.core:jackson-annotations, CodeQL build failed
+com.fasterxml.jackson.core:jackson-core, CodeQL build failed
+org.slf4j:slf4j-api, CodeQL build failed
+log4j-slf4j-impl, Cloning failed
+org.apache.logging.log4j:log4j-api, CodeQL build failed
+org.apache.logging.log4j:log4j-core, CodeQL build failed
+junit-team, Cloning failed
+org.hamcrest:hamcrest-core, Pom.xml not found. Continuing...
+org.hamcrest:hamcrest-core, CodeQL build failed
+jakarta.xml.bind:jakarta.xml.bind-api, CodeQL build failed
+jakarta.activation:jakarta.activation-api, CodeQL build failed
+org.glassfish.jaxb:jaxb-runtime, CodeQL build failed
+jaxb-core, Cloning failed
+org.eclipse.angus:angus-activation, CodeQL build failed
+org.glassfish.jaxb:txw2, CodeQL build failed
+com.sun.istack:istack-commons-runtime, CodeQL build failed
+
+org.apache.xmlgraphics:fop, CodeQL build failed
+org.apache.xmlgraphics:fop-util, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:xmlgraphics-commons, {'file-read': 2, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:fop-events, {'file-read': 0, 'file-write': 2, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+com.thoughtworks.qdox:qdox, {'file-read': 6, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+commons-io:commons-io, {'file-read': 1, 'file-write': 3, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 1}
+org.apache.xmlgraphics:fop-core, {'file-read': 13, 'file-write': 16, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 2}
+org.apache.xmlgraphics:batik-anim, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-css, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-dom, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+xml-apis-1.0.b2.pom, Cloning failed
+org.apache.xmlgraphics:batik-ext, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-parser, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-shared-resources, CodeQL build failed
+org.apache.xmlgraphics:batik-svg-dom, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-util, {'file-read': 6, 'file-write': 3, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-constants, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-i18n, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+xml-apis:xml-apis-ext, Pom.xml not found. Continuing...
+xml-apis:xml-apis-ext, CodeQL build failed
+org.apache.xmlgraphics:batik-awt-util, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-bridge, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-script, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-xml, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-extension, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-gvt, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-transcoder, {'file-read': 2, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-svggen, {'file-read': 1, 'file-write': 5, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.xmlgraphics:batik-codec, {'file-read': 0, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+commons-logging:commons-logging, {'file-read': 0, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+org.apache.pdfbox:fontbox, Pom.xml not found. Continuing...
+org.apache.pdfbox:fontbox, {'file-read': 5, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+junit-team, Cloning failed
+org.hamcrest:hamcrest-core, Pom.xml not found. Continuing...
+org.hamcrest:hamcrest-core, CodeQL build failed
+
+org.graphchi:graphchi-java, CodeQL build failed
+com.yammer.metrics:metrics-core, Pom.xml not found. Continuing...
+com.yammer.metrics:metrics-core, CodeQL build failed
+org.slf4j:slf4j-api, Pom.xml not found. Continuing...
+org.slf4j:slf4j-api, CodeQL build failed
+org.scala-lang:scala-library, Pom.xml not found. Continuing...
+org.scala-lang:scala-library, CodeQL build failed
+mysql-connector-j, Cloning failed
+junit-team, Cloning failed
+org.hamcrest:hamcrest-core, Pom.xml not found. Continuing...
+org.hamcrest:hamcrest-core, CodeQL build failed
+pig, Cloning failed
+xmlenc:xmlenc, Pom.xml not found. Continuing...
+xmlenc:xmlenc, CodeQL build failed
+commons-httpclient:commons-httpclient, Pom.xml not found. Continuing...
+commons-httpclient:commons-httpclient, {'file-read': 5, 'file-write': 2, 'socket-connect': 7, 'socket-server': 0, 'runtime-exec': 0}
+commons-logging:commons-logging, {'file-read': 0, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+commons-codec:commons-codec, {'file-read': 2, 'file-write': 0, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+commons-net:commons-net, {'file-read': 6, 'file-write': 8, 'socket-connect': 11, 'socket-server': 3, 'runtime-exec': 0}
+HandlerContainer.java, Cloning failed
+jetty-6.1.25.pom, Cloning failed
+jetty-6.1.25.pom, Cloning failed
+JspSourceImports.java, Cloning failed
+JspC.java, Cloning failed
+jsp-api-2.1, Cloning failed
+5709571673, Cloning failed
+building-and-testing-java-with-ant, Cloning failed
+commons-el-1.0.pom, Cloning failed
+net.java.dev.jets3t:jets3t, Pom.xml not found. Continuing...
+net.java.dev.jets3t:jets3t, {'file-read': 20, 'file-write': 6, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 3}
+org.mortbay.jetty:servlet-api-2.5, Pom.xml not found. Continuing...
+org.mortbay.jetty:servlet-api-2.5, CodeQL build failed
+kfs, Cloning failed
+hsqldb:hsqldb, Pom.xml not found. Continuing...
+hsqldb:hsqldb, CodeQL build failed
+oroinc, Cloning failed
+AvroKeyOutputFormat.java, Cloning failed
+jackson-mapper-asl.pom, Cloning failed
+jackson-core-asl.pom, Cloning failed
+com.thoughtworks.paranamer:paranamer, CodeQL build failed
+com.thoughtworks.paranamer:paranamer-ant, CodeQL build failed
+com.thoughtworks.paranamer:paranamer-generator, {'file-read': 3, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
+com.thoughtworks.qdox:qdox, {'file-read': 6, 'file-write': 1, 'socket-connect': 0, 'socket-server': 0, 'runtime-exec': 0}
